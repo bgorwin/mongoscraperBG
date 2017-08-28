@@ -59,13 +59,13 @@ $.getJSON("/saved", function(data) {
 //   }
 // });
 
-$.getJSON("/articles", function(data) {
-  // For each one
-  for (var i = 0; i < data.length; i++) {
-    // Display the apropos information on the page
-    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title +"<button class='save' id='"+data[i]._id+"'>Save Article</button>"+ "<br />" + data[i].link + "</p>");
-  }
-});
+// $.getJSON("/articles", function(data) {
+//   // For each one
+//   for (var i = 0; i < data.length; i++) {
+//     // Display the apropos information on the page
+//     $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title +"<button class='save' id='"+data[i]._id+"'>Save Article</button>"+ "<br />" + data[i].link + "</p>");
+//   }
+// });
 
 
 $(document).on("click", ".save", function() {
